@@ -1,0 +1,30 @@
+bind 'w' windowlist
+bind + resize +1
+bind - resize -1
+bind ] resize 1
+bind [ resize 7
+bind r resize
+bind = resize =
+bind S eval split "next"
+bind t title
+
+hardstatus on
+
+#term xterm
+activity "Aktywność w oknie %"
+altscreen on
+autodetach on
+caption splitonly "%?%F%{bb kY} Aktywne %:%{bb kR} Nieaktywne%? %= D:%d.%m (%D)"
+chdir $HOME
+defencoding utf8
+defscrollback 50000
+deflogin off
+defutf8 on
+defwrap off
+hardstatus alwayslastline "%{bb dK}%-w%{bb dG}[%n %t]%{bb dK}%+w %=%{bb dK}%1`"
+msgwait 2
+sorendition 10 07
+startup_message off
+termcapinfo xterm*|linux*|rxvt*|Eterm* OP
+vbell off
+shelltitle "$ |zsh"

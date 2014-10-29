@@ -1,0 +1,68 @@
+# zwykle aliasy
+alias mplayer="mplayer -idx -quiet"
+alias 7z9a="sudo 7z a -t7z -mx=9 " 
+alias ai="sudo apt-get install"
+alias as="sudo apt-cache search"
+alias au="sudo apt-get update && sudo apt-get upgrade"
+#alias ai="sudo emerge --ask"
+#alias as="sudo emerge -s"
+alias df="dfc -nt -rootfs,tmpfs,devtmpfs"
+alias filmjoin="mencoder -oac copy  -ovc copy -idx -o"
+alias grep="grep --color=auto"
+alias l="ls"
+alias ls="ls --color=auto"
+alias rscp='rsync -aP --no-whole-file --inplace'
+alias rsmv='rscp --remove-source-files'
+alias s="tmux"
+alias sr="tmux attach"
+alias su="sudo su"
+alias tarbc="tar --bzip2 -cvf"
+alias tarbx="tar --bzip2 -xvf"
+alias tarc="tar -cvvf"
+alias targc="tar -cxvf"
+alias targx="tar -zxvf"
+alias tarx="tar -xvvf"
+alias terminator='terminator --geometry 900x550'
+alias vnc="/usr/lib/vino/vino-server"
+alias xlock="xlock -mode blank"
+alias lapwol="ssh dom '/usr/sbin/wol -i 192.168.1.255 -p 7 00:1E:37:23:48:30'" 
+alias zipc="zip -9 -r "
+alias rss="newsbeuter -r"
+alias SX='autossh -D 1080 '
+alias ranty="mplayer http://94.23.89.48:7200"
+alias tunel="autossh -f -NT -R 10080:localhost:80 mydevil"
+alias tmux="TERM=xterm-256color tmux"
+alias myhash="mcookie < /dev/urandom"
+alias mocp="ncmpcpp"
+alias moc="ncmpcpp"
+alias pogoda="ansiweather"
+alias twitter="rainbowstream"
+alias tv="~/bin/TraktTv.py watchlist --todo"
+alias aunlock="sudo fuser -vki /var/lib/dpkg/lock; sudo dpkg --configure -a"
+alias youtube="mpsyt"
+alias streamtorrent="peerflix"
+alias distouchpad='xinput set-prop `xinput | grep Synaptics | cut -d"=" -f2|cut  -f1` "Device Enabled" 0'
+alias entouchpad='xinput set-prop `xinput | grep Synaptics | cut -d"=" -f2|cut  -f1` "Device Enabled" 1'
+
+#SCREEN LAYOUT
+alias hdmi="xrandr --output DP3 --off --output DP2 --off --output DP1 --off --output HDMI3 --off --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --mode 1366x768 --pos 1920x0 --rotate normal --output VGA1 --off"
+alias hdmi-only="xrandr --output DP3 --off --output DP2 --off --output DP1 --off --output HDMI3 --off --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VGA1 --off"
+alias laps="xrandr --output DP3 --off --output DP2 --off --output DP1 --off --output HDMI3 --off --output HDMI2 --off --output HDMI1 --off --output LVDS1 --mode 1366x768 --pos 0x0 --rotate normal --output VGA1 --off"
+
+# TASKS
+alias tasks='task +today list'
+alias work='clear; task +work list'
+
+#CONFIG
+alias config='cd ~/.homesick/repos/common'
+
+#CVS 
+alias cvsreplace="cvs update -C -l -d -P"
+alias cvsupdate="cvs update -d -P"
+
+#pgsql
+alias pgrestore='psql -U postgres -f '
+alias pgbackup='pg_dumpall -U postgres > '
+
+#work
+alias vpnchanda="sudo /home/chstr/bin/vpnchanda.sh" 

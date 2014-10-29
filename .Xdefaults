@@ -1,0 +1,59 @@
+! General
+URxvt.letterSpace: -2	
+urxvt*termName:  rxvt-256color
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+urxvt*saveLines:         65535
+urxvt*cursorBlink:       false
+urxvt*urgentOnBell:      false 
+urxvt*override-redirect:false
+urxvt*borderLess:       false
+urxvt*internalBorder:       0
+urxvt*externalBorder:       0
+
+! Extensions
+urxvt*perl-lib:        /usr/lib/urxvt/perl/
+urxvt*perl-ext-common: default,matcher,searchable-scrollback
+urxvt*urlLauncher:     /usr/bin/chromium
+urxvt*matcher.button:  1
+urxvt.cutchars:        `()'*<>[]{|}"
+
+! Appearance
+urxvt.font: xft:DejavuSansMono:pixelsize=12:style=book:antialias=false:hinting=false
+urxvt.boldFont: xft:DejavuSansMono:pixelsize=12:style=book:antialias=false:hinting=false
+! urxvt.font: xft:Terminus:size=9:style=book:hinting=true
+! urxvt.boldFont: xft:Terminus:size=9:style=book:hinting=true
+urxvt*cursorColor: #DCDCCC
+urxvt*shading:    10
+urxvt*transparent:true
+URxvt*background: #000000
+URxvt*foreground: #DEDEDE
+
+URxvt*colorUL: #86a2b0
+
+! black
+urxvt*color0  : #2E3436
+urxvt*color8  : #555753
+! red
+urxvt*color1  : #CC0000
+urxvt*color9  : #EF2929
+! green
+urxvt*color2  : #4E9A06
+urxvt*color10 : #8AE234
+! yellow
+urxvt*color3  : #C4A000
+urxvt*color11 : #FCE94F
+! blue
+urxvt*color4  : #3465A4
+urxvt*color12 : #729FCF
+! magenta
+urxvt*color5  : #75507B
+urxvt*color13 : #AD7FA8
+! cyan
+urxvt*color6  : #06989A
+urxvt*color14 : #34E2E2
+! white
+urxvt*color7  : #D3D7CF
+urxvt*color15 : #EEEEEC
+
