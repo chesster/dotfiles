@@ -33,11 +33,8 @@ alias ranty="mplayer http://94.23.89.48:7200"
 alias tunel="autossh -f -NT -R 10080:localhost:80 mydevil"
 alias tmux="TERM=xterm-256color tmux"
 alias myhash="mcookie < /dev/urandom"
-alias mocp="ncmpcpp"
-alias moc="ncmpcpp"
-alias pogoda="ansiweather"
 alias twitter="rainbowstream"
-alias tv="~/bin/TraktTv.py watchlist --todo"
+alias tv="~/Dokumenty/Development/python/traktconsole/TraktTv.py watchlist --todo"
 alias aunlock="sudo fuser -vki /var/lib/dpkg/lock; sudo dpkg --configure -a"
 alias youtube="mpsyt"
 alias streamtorrent="peerflix"
@@ -52,9 +49,6 @@ alias laps="xrandr --output DP3 --off --output DP2 --off --output DP1 --off --ou
 # TASKS
 alias tasks='task +today list'
 alias work='clear; task +work list'
-
-#CONFIG
-alias config='cd ~/.homesick/repos/common'
 
 #CVS 
 alias cvsreplace="cvs update -C -l -d -P"
