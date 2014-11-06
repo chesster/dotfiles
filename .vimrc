@@ -2,9 +2,10 @@ execute pathogen#infect()
 syntax on
 syntax enable
 
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+"let g:solarized_termcolors=256
+set t_Co=256
+"colorscheme solarized
+colorscheme zenburn 
 
 filetype plugin indent on
 
@@ -52,10 +53,10 @@ set tabpagemax=50
 set wildmenu
 set wrapscan
 
-"set shiftwidth=4 
-"set softtabstop=4 
-"set tabstop=4 
-"set expandtab
+set shiftwidth=4 
+set softtabstop=4 
+set tabstop=4 
+set expandtab
 
 "Python Mode
 map <Leader>g :call RopeGotoDefinition()<CR>
