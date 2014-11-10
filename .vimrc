@@ -9,6 +9,11 @@ colorscheme zenburn
 
 filetype plugin indent on
 
+let g:php_search_doc_command='xdg-open'
+
+"Leader
+let mapleader = ","
+
 "GIST
 let g:gist_detect_filetype = 1
 let g:gist_show_privates = 1
