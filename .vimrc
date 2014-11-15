@@ -4,8 +4,7 @@ syntax enable
 
 "let g:solarized_termcolors=256
 set t_Co=256
-"colorscheme solarized
-colorscheme zenburn 
+colorscheme distinguished 
 
 filetype plugin indent on
 
@@ -75,6 +74,14 @@ let g:pymode_breakpoint = 0
 let g:pymode_syntax = 1
 let g:pymode_virtualenv = 1
 
+"YankStack
+"call yankstack#setup()
+"let g:yankstack_yank_keys = ['y', 'd']
+
+"T-Comment
+map <leader>/ <c-_><c-_>
+
+
 "MAPS
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
@@ -103,4 +110,3 @@ set mouse+=a
 if &term =~ '^screen'
 	set ttymouse=xterm2
 endif
-
