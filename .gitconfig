@@ -18,3 +18,5 @@
 	email = lukasz@malik.pro
 [github]
 	user = chesster
+[http]
+	sslverify = false

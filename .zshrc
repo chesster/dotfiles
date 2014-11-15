@@ -32,6 +32,7 @@ avd() { aria2c -c http://files.malik.pro/$1 }
 gt() { grep --color=always -n -Rs $2 $1 . }
 gtf() { grep -Rl $2 $1 . }
 h() { cat $HISTFILE | grep $1 }
+countdown() { SEK=$1;for ((i=$SEK;i>=0;i--));do echo -ne "\r$(date -d"0+$i sec" +%H:%M:%S)";sleep 1;done; echo "" }
 
 forceumount(){
     if [[ -d $1 ]]; then
