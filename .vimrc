@@ -25,6 +25,9 @@ let g:multi_cursor_prev_key='<C-k>'
 let g:multi_cursor_skip_key='<C-o>'
 let g:multi_cursor_quit_key='<Esc>'
 
+" GitGutter
+let g:gitgutter_max_signs=5000
+
 "Vim Wiki
 let g:vimwiki_list = [{'path': '~/Dokumenty/.Dropbox/VimWiki/wiki/', 'path_html': '~/Dokumenty/.Dropbox/VimWiki/html/'}]
 
