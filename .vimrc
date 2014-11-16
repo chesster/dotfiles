@@ -4,7 +4,7 @@ syntax enable
 
 "let g:solarized_termcolors=256
 set t_Co=256
-colorscheme distinguished 
+colorscheme distinguished
 
 filetype plugin indent on
 
@@ -35,34 +35,34 @@ let g:ipy_perform_mappings=0
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 " SETS
-set autochdir 
-set autoindent 
+set autochdir
+set autoindent
 set completeopt=longest,menuone
-set fenc=utf-8 
+set fenc=utf-8
 set fileencodings=utf-8,latin2
 set gdefault
 set hidden
 set ignorecase
-set incsearch 
+set incsearch
 set laststatus=2
-set mouse=a 
-set nobackup 
-set nocompatible 
+set mouse=a
+set nobackup
+set nocompatible
 set noexpandtab
 set nofoldenable
 set nowrap
-set nowritebackup 
-set number 
+set nowritebackup
+set number
 set ruler
-set showcmd 
-set t_Co=256 
-set tabpagemax=50 
+set showcmd
+set t_Co=256
+set tabpagemax=50
 set wildmenu
 set wrapscan
 
-set shiftwidth=4 
-set softtabstop=4 
-set tabstop=4 
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 "Python Mode
@@ -77,6 +77,12 @@ let g:pymode_virtualenv = 1
 "YankStack
 "call yankstack#setup()
 "let g:yankstack_yank_keys = ['y', 'd']
+
+"IndentGuides
+let g:indentLine_color_term = 239
+
+"Vim Session
+let g:session_autosave = 'no'
 
 "T-Comment
 map <leader>/ <c-_><c-_>
