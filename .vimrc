@@ -125,12 +125,13 @@ command! Q q
 command! W w
 command! RmEmptyLines g/^$/d
 
+
 "GitGutter
 highlight clear SignColumn
 
 set mouse+=a
 if &term =~ '^screen'
-	set ttymouse=xterm2
+    set ttymouse=xterm2
 endif
 
 " Zoom / Restore window.
@@ -147,3 +148,10 @@ function! s:ZoomToggle() abort
 endfunction
 command! ZoomToggle call s:ZoomToggle()
 nnoremap <silent> <C-z> :ZoomToggle<CR>
+
+"TabsToSpaces
+fun s:TabsToSpaces()
+    set expandtab ts=4 sw=4 ai
+    %retab
+endf
+command! TabsToSpaces call s:TabsToSpaces()
